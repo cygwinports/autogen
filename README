@@ -9,17 +9,17 @@ AutoGen can now accept XML files as definition input, in addition to CGI
 data (for producing dynamic HTML) and traditional AutoGen definitions.
 
 Runtime requirements:
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   libguile17-1.8.1-4
-  libxml2-2.6.26-1
+  libxml2-2.6.27-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.23-2
-  autoconf2.5-2.60-2
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.8-1
+  cygport-0.2.11-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
@@ -36,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack autogen-5.8.8-X-src.tar.bz2
+  unpack autogen-5.8.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./autogen-5.8.8-X.cygport all
+  cygport ./autogen-5.8.9-X.cygport all
 
 This will create:
-  /usr/src/autogen-5.8.8-X-src.tar.bz2
-  /usr/src/autogen-5.8.8-X.tar.bz2
+  /usr/src/autogen-5.8.9-X-src.tar.bz2
+  /usr/src/autogen-5.8.9-X.tar.bz2
 
 -------------------------------------------
 
@@ -75,16 +75,16 @@ Files included in the binary package:
   /usr/share/autogen/optmain.tpl
   /usr/share/autogen/rc-sample.tpl
   /usr/share/autogen/stdoptions.def
-  /usr/share/doc/Cygwin/autogen-5.8.8.README
-  /usr/share/doc/autogen-5.8.8/AUTHORS
-  /usr/share/doc/autogen-5.8.8/COPYING
-  /usr/share/doc/autogen-5.8.8/ChangeLog
-  /usr/share/doc/autogen-5.8.8/INSTALL
-  /usr/share/doc/autogen-5.8.8/NEWS
-  /usr/share/doc/autogen-5.8.8/NOTES
-  /usr/share/doc/autogen-5.8.8/README
-  /usr/share/doc/autogen-5.8.8/THANKS
-  /usr/share/doc/autogen-5.8.8/TODO
+  /usr/share/doc/Cygwin/autogen-5.8.9.README
+  /usr/share/doc/autogen-5.8.9/AUTHORS
+  /usr/share/doc/autogen-5.8.9/COPYING
+  /usr/share/doc/autogen-5.8.9/ChangeLog
+  /usr/share/doc/autogen-5.8.9/INSTALL
+  /usr/share/doc/autogen-5.8.9/NEWS
+  /usr/share/doc/autogen-5.8.9/NOTES
+  /usr/share/doc/autogen-5.8.9/README
+  /usr/share/doc/autogen-5.8.9/THANKS
+  /usr/share/doc/autogen-5.8.9/TODO
   /usr/share/info/autogen.info-1.gz
   /usr/share/info/autogen.info-2.gz
   /usr/share/info/autogen.info.gz
@@ -136,6 +136,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 5.8.9-1 -----
+Version bump.
 
 ----- version 5.8.8-1 -----
 Initial release for Cygwin.
