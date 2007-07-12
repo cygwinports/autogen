@@ -1,5 +1,5 @@
 category: Devel
-requires: cygwin libguile17
+requires: cygwin
 external-source: autogen
 sdesc: "Automated text and program generation tool (AutoOpts runtime)"
 ldesc: "AutoGen is a tool designed to simplify the creation and 

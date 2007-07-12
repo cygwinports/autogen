@@ -1,5 +1,5 @@
 category: Devel
-requires: cygwin libopts24 libguile17 libxml2
+requires: cygwin libopts25 libguile17 libxml2
 sdesc: "Automated text and program generation tool (apps)"
 ldesc: "AutoGen is a tool designed to simplify the creation and 
 maintenance of programs that contain large amounts of repetitious text. 
