@@ -10,8 +10,8 @@ data (for producing dynamic HTML) and traditional AutoGen definitions.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  libguile17-1.8.1-7
-  libxml2-2.6.28-2
+  libguile17-1.8.3-1
+  libxml2-2.6.30-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -19,7 +19,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
@@ -32,21 +32,22 @@ Canonical website:
 
 Canonical download:
   http://downloads.sourceforge.net/autogen/
+  ftp://ftp.gnu.org/gnu/autogen/
 
 -------------------------------------------
 
 Build instructions:
-  unpack autogen-5.9.1-X-src.tar.bz2
+  unpack autogen-5.9.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./autogen-5.9.1-X.cygport all
+  cygport ./autogen-5.9.3-X.cygport all
 
 This will create:
-  /usr/src/autogen-5.9.1-X-src.tar.bz2
-  /usr/src/autogen-5.9.1-X.tar.bz2
-  /usr/src/libopts-devel-5.9.1-X.tar.bz2
-  /usr/src/libopts25-5.9.1-X.tar.bz2
+  /usr/src/autogen-5.9.3-X-src.tar.bz2
+  /usr/src/autogen-5.9.3-X.tar.bz2
+  /usr/src/libopts-devel-5.9.3-X.tar.bz2
+  /usr/src/libopts25-5.9.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -78,16 +79,16 @@ Files included in the binary packages:
   /usr/share/autogen/optmain.tpl
   /usr/share/autogen/rc-sample.tpl
   /usr/share/autogen/stdoptions.def
-  /usr/share/doc/Cygwin/autogen-5.9.1.README
-  /usr/share/doc/autogen-5.9.1/AUTHORS
-  /usr/share/doc/autogen-5.9.1/COPYING
-  /usr/share/doc/autogen-5.9.1/ChangeLog
-  /usr/share/doc/autogen-5.9.1/INSTALL
-  /usr/share/doc/autogen-5.9.1/NEWS
-  /usr/share/doc/autogen-5.9.1/NOTES
-  /usr/share/doc/autogen-5.9.1/README
-  /usr/share/doc/autogen-5.9.1/THANKS
-  /usr/share/doc/autogen-5.9.1/TODO
+  /usr/share/doc/Cygwin/autogen-5.9.3.README
+  /usr/share/doc/autogen-5.9.3/AUTHORS
+  /usr/share/doc/autogen-5.9.3/COPYING
+  /usr/share/doc/autogen-5.9.3/ChangeLog
+  /usr/share/doc/autogen-5.9.3/INSTALL
+  /usr/share/doc/autogen-5.9.3/NEWS
+  /usr/share/doc/autogen-5.9.3/NOTES
+  /usr/share/doc/autogen-5.9.3/README
+  /usr/share/doc/autogen-5.9.3/THANKS
+  /usr/share/doc/autogen-5.9.3/TODO
   /usr/share/info/autogen.info-1.gz
   /usr/share/info/autogen.info-2.gz
   /usr/share/info/autogen.info.gz
@@ -138,6 +139,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 5.9.3-1 -----
+Version bump.
 
 ----- version 5.9.1-1 -----
 Version bump.
