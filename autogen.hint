@@ -1,7 +1,6 @@
 category: Devel
-requires: cygwin
-external-source: autogen
-sdesc: "Automated text and program generation tool (AutoOpts runtime)"
+requires: cygwin libgcc1 libopts25 libguile17 libxml2
+sdesc: "Automated text and program generation tool (apps)"
 ldesc: "AutoGen is a tool designed to simplify the creation and 
 maintenance of programs that contain large amounts of repetitious text. 
 It is especially valuable in programs that have several blocks of text 

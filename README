@@ -9,21 +9,21 @@ AutoGen can now accept XML files as definition input, in addition to CGI
 data (for producing dynamic HTML) and traditional AutoGen definitions.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libguile17-1.8.3-1
-  libxml2-2.6.30-1
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libguile17-1.8.6-1
+  libxml2-2.7.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -37,23 +37,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack autogen-5.9.3-X-src.tar.bz2
+  unpack autogen-5.9.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./autogen-5.9.3-X.cygport all
+  cygport ./autogen-5.9.7-X.cygport all
 
 This will create:
-  /usr/src/autogen-5.9.3-X-src.tar.bz2
-  /usr/src/autogen-5.9.3-X.tar.bz2
-  /usr/src/libopts-devel-5.9.3-X.tar.bz2
-  /usr/src/libopts25-5.9.3-X.tar.bz2
+  /usr/src/autogen-5.9.7-X-src.tar.bz2
+  /usr/src/autogen-5.9.7-X.tar.bz2
+  /usr/src/libopts-devel-5.9.7-X.tar.bz2
+  /usr/src/libopts25-5.9.7-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-  /etc/postinstall/autogen.sh
+(autogen)
   /usr/bin/autogen.exe
   /usr/bin/columns.exe
   /usr/bin/cygguileopts-0.dll
@@ -71,7 +71,7 @@ Files included in the binary packages:
   /usr/share/autogen/fsm-trans.tpl
   /usr/share/autogen/fsm.tpl
   /usr/share/autogen/getopt.tpl
-  /usr/share/autogen/libopts-29.0.4.tar.gz
+  /usr/share/autogen/libopts-32.0.7.tar.gz
   /usr/share/autogen/optcode.tpl
   /usr/share/autogen/opthead.tpl
   /usr/share/autogen/options.tpl
@@ -79,20 +79,22 @@ Files included in the binary packages:
   /usr/share/autogen/optmain.tpl
   /usr/share/autogen/rc-sample.tpl
   /usr/share/autogen/stdoptions.def
-  /usr/share/doc/Cygwin/autogen-5.9.3.README
-  /usr/share/doc/autogen-5.9.3/AUTHORS
-  /usr/share/doc/autogen-5.9.3/COPYING
-  /usr/share/doc/autogen-5.9.3/ChangeLog
-  /usr/share/doc/autogen-5.9.3/INSTALL
-  /usr/share/doc/autogen-5.9.3/NEWS
-  /usr/share/doc/autogen-5.9.3/NOTES
-  /usr/share/doc/autogen-5.9.3/README
-  /usr/share/doc/autogen-5.9.3/THANKS
-  /usr/share/doc/autogen-5.9.3/TODO
+  /usr/share/autogen/usage.tpl
+  /usr/share/doc/autogen/AUTHORS
+  /usr/share/doc/autogen/COPYING
+  /usr/share/doc/autogen/ChangeLog
+  /usr/share/doc/autogen/NEWS
+  /usr/share/doc/autogen/NOTES
+  /usr/share/doc/autogen/README
+  /usr/share/doc/autogen/THANKS
+  /usr/share/doc/autogen/TODO
   /usr/share/info/autogen.info-1.gz
   /usr/share/info/autogen.info-2.gz
   /usr/share/info/autogen.info.gz
   /usr/share/man/man1/autogen.1.gz
+  /usr/share/man/man1/columns.1.gz
+  /usr/share/man/man1/getdefs.1.gz
+  /usr/share/man/man1/xml2ag.1.gz
 
 (libopts25)
   /usr/bin/cygopts-25.dll
@@ -111,9 +113,6 @@ Files included in the binary packages:
   /usr/share/aclocal/autoopts.m4
   /usr/share/aclocal/liboptschk.m4
   /usr/share/man/man1/autoopts-config.1.gz
-  /usr/share/man/man1/columns.1.gz
-  /usr/share/man/man1/getdefs.1.gz
-  /usr/share/man/man1/xml2ag.1.gz
   /usr/share/man/man3/ao_string_tokenize.3.gz
   /usr/share/man/man3/configFileLoad.3.gz
   /usr/share/man/man3/optionFileLoad.3.gz
@@ -140,17 +139,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 5.9.3-1 -----
-Version bump.
-
------ version 5.9.1-1 -----
-Version bump.
-
------ version 5.8.9-1 -----
-Version bump.
-
------ version 5.8.8-1 -----
-Initial release for Cygwin.
+----- version 5.9.7-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

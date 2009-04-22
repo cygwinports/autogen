@@ -1,0 +1,11 @@
+--- origsrc/autogen-5.9.7/agen5/fmemopen.c	2008-04-06 17:39:52.000000000 -0500
++++ src/autogen-5.9.7/agen5/fmemopen.c	2009-04-22 00:03:06.686875000 -0500
+@@ -69,7 +69,7 @@
+ #  if defined(HAVE_LIBIO_H)
+ #    include <libio.h>
+ #  endif
+-   typedef _IO_off64_t  fmem_off_t;
++   typedef off_t        fmem_off_t;
+    typedef int          seek_pos_t;
+ 
+ #elif defined(HAVE_FUNOPEN)
