@@ -1,0 +1,24 @@
+NAME="autogen"
+VERSION=5.9.7
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Automated text and program generation tool"
+DESCRIPTION="AutoGen is a tool designed to simplify the creation and
+maintenance of programs that contain large amounts of repetitious text.
+It is especially valuable in programs that have several blocks of text
+that must be kept synchronized."
+HOMEPAGE="http://autogen.sourceforge.net/"
+SRC_URI="mirror://gnu/autogen/rel${VERSION}/${NAME}-${VERSION}.tar.bz2
+         mirror://gnu/autogen/rel${VERSION}/${NAME}-${VERSION}.tar.bz2.sig"
+PATCH_URI="5.9.7-no-undefined.patch
+           5.9.7-cygwin17.patch"
+
+PKG_NAMES="${NAME} libopts25 libopts-devel"
+autogen_CONTENTS="--exclude=*-config* --exclude=aclocal --exclude=man3
+                 usr/bin/cygguileopts-0.dll usr/bin/*.exe usr/share/"
+libopts25_CONTENTS="usr/bin/cygopts-25.dll"
+libopts_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/ usr/share/aclocal/
+                 usr/share/man/man1/*-config* usr/share/man/man3/"
+
+LDFLAGS+=" -Wl,--export-all-symbols"
+MAKEOPTS+=" -j1"
