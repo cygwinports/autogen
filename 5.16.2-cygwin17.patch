@@ -1,0 +1,20 @@
+--- origsrc/autogen-5.16.2/agen5/fmemopen.c	2012-08-11 11:41:49.000000000 -0500
++++ src/autogen-5.16.2/agen5/fmemopen.c	2013-10-07 19:12:23.616124800 -0500
+@@ -57,7 +57,7 @@ typedef struct {
+ #    include <libio.h>
+ #  endif
+ 
+-   typedef off64_t * seek_off_t;
++   typedef off_t *   seek_off_t;
+    typedef int       seek_ret_t;
+ 
+ #elif defined(HAVE_FUNOPEN)
+@@ -364,7 +364,7 @@ fmem_seek(void * cookie, seek_off_t offs
+     pFMC->next_ix = new_pos;
+ 
+ #ifdef HAVE_FOPENCOOKIE
+-    *offset = (off64_t)new_pos;
++    *offset = (off_t)new_pos;
+     return 0;
+ #else
+     return new_pos;
