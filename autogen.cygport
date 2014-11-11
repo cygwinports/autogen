@@ -1,5 +1,5 @@
 NAME="autogen"
-VERSION=5.18.2
+VERSION=5.18.4
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Automated text and program generation tool"
@@ -19,6 +19,7 @@ PKG_NAMES="${NAME} libopts25 libopts-devel"
 autogen_CONTENTS="--exclude=autoopts-config* --exclude=aclocal --exclude=man3
                  usr/bin/*.exe usr/share/"
 libopts25_CONTENTS="usr/bin/cygopts-25.dll"
+libopts_devel_REQUIRES="autogen"
 libopts_devel_CONTENTS="usr/bin/autoopts-config usr/include/ usr/lib/ usr/share/aclocal/
                  usr/share/man/man1/*-config* usr/share/man/man3/"
 
