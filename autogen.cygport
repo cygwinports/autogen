@@ -1,5 +1,5 @@
 NAME="autogen"
-VERSION=5.18.4
+VERSION=5.18.12
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Automated text and program generation tool"
@@ -13,15 +13,32 @@ SRC_URI="mirror://gnu/autogen/rel${VERSION}/${NAME}-${VERSION}.tar.xz
 PATCH_URI="
 	5.16.2-no-undefined.patch
 	5.16.2-cygwin17.patch
+	5.18.12-testsuite.patch
 "
 
 PKG_NAMES="${NAME} libopts25 libopts-devel"
-autogen_CONTENTS="--exclude=autoopts-config* --exclude=aclocal --exclude=man3
-                 usr/bin/*.exe usr/share/"
+autogen_CONTENTS="
+	--exclude=autoopts-config*
+	usr/bin/*.exe
+	usr/lib/autogen/
+	usr/share/autogen/
+	usr/share/doc/${NAME}/
+	usr/share/info/autogen.info*
+	usr/share/man/man1/
+"
 libopts25_CONTENTS="usr/bin/cygopts-25.dll"
 libopts_devel_REQUIRES="autogen"
-libopts_devel_CONTENTS="usr/bin/autoopts-config usr/include/ usr/lib/ usr/share/aclocal/
-                 usr/share/man/man1/*-config* usr/share/man/man3/"
+libopts_devel_CONTENTS="
+	usr/bin/autoopts-config
+	usr/include/autoopts/
+	usr/lib/libopts.dll.a
+	usr/lib/pkgconfig/autoopts.pc
+	usr/share/aclocal/autoopts.m4
+	usr/share/man/man1/autoopts-config.1*
+	usr/share/man/man3/
+"
+
+DIFF_EXCLUDES="config-h.in"
 
 CPPFLAGS+=" -D__USE_LINUX_IOCTL_DEFS"
 LDFLAGS+=" -Wl,--export-all-symbols"

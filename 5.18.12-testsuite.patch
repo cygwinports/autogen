@@ -1,0 +1,10 @@
+--- origsrc/autogen-5.18.12/autoopts/test/defs.in	2016-03-08 11:00:39.000000000 -0600
++++ src/autogen-5.18.12/autoopts/test/defs.in	2017-04-25 11:18:27.687062400 -0500
+@@ -151,6 +151,7 @@ init_tests()
+         break
+       }
+     done
++    test -f /usr/lib/libintl.dll.a && LIB="${LIB} -lintl"
+     ;;
+   esac
+   LIB="${lo_lib} ${LIB}"
