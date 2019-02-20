@@ -3,7 +3,7 @@
 @@ -119,7 +119,7 @@ m4datadir                 = $(datadir)/a
  nodist_libopts_la_SOURCES = libopts.c
  libopts_la_SOURCES        = $(HDRS)
- libopts_la_CFLAGS         = -DPKGDATADIR='"$(pkgdatadir)"'
+ libopts_la_CFLAGS         = -DPKGDATADIR='"$(pkgdatadir)"' $(AM_CFLAGS)
 -libopts_la_LDFLAGS        = -version-info $(LIBOPTS_VER)
 +libopts_la_LDFLAGS        = -version-info $(LIBOPTS_VER) -no-undefined
  libopts_la_LIBADD         = $(top_builddir)/snprintfv/libsnprintfv.la
